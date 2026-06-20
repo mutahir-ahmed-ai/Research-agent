@@ -1,7 +1,7 @@
 import os
 from langchain_groq import ChatGroq
 from langchain_classic.agents import AgentExecutor, create_react_agent
-from langchain import hub
+from langchain_classic import hub
 from tools.search_tool import search_web
 from tools.pdf_tool import generate_pdf_report
 
