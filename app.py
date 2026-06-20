@@ -119,7 +119,7 @@ if st.session_state.pdf_bytes:
             mime="application/pdf"
         )
 
-     if st.session_state.show_view:
+if st.session_state.show_view:
         pdf_document = fitz.open(stream=st.session_state.pdf_bytes, filetype="pdf")
         for page_num in range(len(pdf_document)):
             page = pdf_document[page_num]
