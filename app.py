@@ -26,11 +26,12 @@ if st.button("Generate Research Report", type="primary"):
 
         log_output = StringIO()
         
+        log_output = StringIO()
+        old_stdout = sys.stdout
+        
         with st.spinner("Researching and generating your PDF report..."):
             try:
                 agent = create_research_agent()
-
-                old_stdout = sys.stdout
                 sys.stdout = log_output
 
                 result = agent.invoke({
