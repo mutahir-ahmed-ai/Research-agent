@@ -50,6 +50,8 @@ Topic: {topic}
 Instructions:
 - Search the web at least 2-3 times with different queries to gather comprehensive information
 - Keep track of the source URLs returned in each search result
+- When selecting which sources to cite, prioritize authoritative sources: news outlets, government websites, official reports, and research papers
+- Do NOT include social media links (YouTube, Instagram, Facebook, Twitter/X, TikTok, Reddit) in the Sources section, even if they appeared in search results
 - After gathering enough information, create a well-structured report with this exact format:
 # {topic}
 
@@ -67,7 +69,7 @@ Instructions:
 (2-3 sentence conclusion)
 
 ## Sources
-- (list each unique source URL you actually used, one per line)
+- (list only the credible, non-social-media source URLs you used, one per line)
 
 - Then call generate_pdf_report with the complete formatted content above, including the Sources section"""
                 })
