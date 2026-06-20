@@ -1,7 +1,6 @@
 import streamlit as st
 import os
 import sys
-import base64
 import fitz
 from io import StringIO
 from agent.research_agent import create_research_agent
@@ -119,11 +118,11 @@ if st.session_state.pdf_bytes:
             mime="application/pdf"
         )
 
-if st.session_state.show_view:
+    if st.session_state.show_view:
         pdf_document = fitz.open(stream=st.session_state.pdf_bytes, filetype="pdf")
         for page_num in range(len(pdf_document)):
             page = pdf_document[page_num]
             pix = page.get_pixmap(dpi=150)
             img_bytes = pix.tobytes("png")
             st.image(img_bytes, use_container_width=True)
-            pdf_document.close()
+        pdf_document.close()
