@@ -126,4 +126,4 @@ if st.session_state.pdf_bytes:
             pix = page.get_pixmap(dpi=150)
             img_bytes = pix.tobytes("png")
             st.image(img_bytes, use_container_width=True)
-        pdf_document.close()
+            pdf_document.close()
