@@ -9,7 +9,7 @@ def search_web(query: str) -> str:
     
     client = TavilyClient(api_key=os.environ.get("TAVILY_API_KEY"))
     
-    response = client.search(query=query, max_results=5)
+    response = client.search(query=query, max_results=3)
     
     formatted_results = ""
     for result in response.get("results", []):
