@@ -15,7 +15,7 @@ def search_web(query: str) -> str:
     for result in response.get("results", []):
         formatted_results += f"Title: {result['title']}\n"
         formatted_results += f"Source: {result['url']}\n"
-        formatted_results += f"Content: {result['content']}\n"
+        formatted_results += f"Content: {result['content'][:500]}\n"
         formatted_results += "-" * 50 + "\n"
     
     return formatted_results if formatted_results else "No results found."
