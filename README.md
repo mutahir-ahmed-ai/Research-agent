@@ -1,9 +1,8 @@
-🔍 AI Research Agent
+**🔍 AI Research Agent**
 
 An autonomous AI agent that researches any topic by searching the web, synthesizing findings, and generating a formatted downloadable PDF report — powered by the ReAct reasoning pattern.
 
-🚀 Live Demo
-
+**🚀 Live Demo**
 
 What It Does
 
