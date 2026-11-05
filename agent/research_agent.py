@@ -9,7 +9,7 @@ def create_research_agent():
     
     llm = ChatGroq(
         api_key=os.environ.get("GROQ_API_KEY"),
-        model_name="llama-3.3-70b-versatile",
+        model_name="openai/gpt-oss-120b",
         temperature=0.3
     )
 
